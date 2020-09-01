@@ -1,0 +1,65 @@
+<%- include("header") -%>
+
+<div class="alert alert-warning alert-dismissible fade show">
+  <i class="fa fa-warning"></i>
+  <strong> Warning! If there is any emergency call 911</strong>. Let them know
+  your symptoms.
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+</div>
+
+<div class="alert alert-danger alert-dismissible fade show">
+  <i class="fa fa-exclamation"></i>
+  Visit
+  <a href="https://ca.thrive.health/covid19/en"
+    >Self assement by government of Canada</a
+  >
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+</div>
+
+<h1 class="card-title" style="text-align: center;"><%=countryTitle%></h1>
+
+<div class="card">
+  <div class="card-body">
+    <p style="text-align: center; line-height: 0;"><%=todayDate%></p>
+    <br />
+    <div class="row">
+      <div class="col-lg-6 total">
+        <h3>Total deaths</h3>
+        <p><%=todayTotalDeath%></p>
+        <h3>New deaths</h3>
+        <p><%=todayNewDeaths%></p>
+      </div>
+
+      <div class="col-lg-6 cases-box">
+        <h3>Total cases</h3>
+        <p><%=todayTotalCases%></p>
+        <h3>New cases</h3>
+        <p><%=todayNewCases%></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <p style="text-align: center; line-height: 0;"><%=yesterDayDate%></p>
+    <br />
+    <div class="row">
+      <div class="col-lg-6">
+        <h3>Total deaths</h3>
+        <p><%=yesterdayTotalDeaths%></p>
+        <h3>New deaths</h3>
+        <p><%=yesterdayNewDeaths%></p>
+      </div>
+
+      <div class="col-lg-6 cases-box">
+        <h3>Total cases</h3>
+        <p><%=yesterdayTotalCases%></p>
+        <h3>New cases</h3>
+        <p><%=yesterdayNewCases%></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include("footer") -%>
